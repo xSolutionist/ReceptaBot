@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ReceptaBot.Shared.Models
 {
-    public class Ingrediant
+    public class Ingredient
     {
         public int Id { get; set; }
         public string Name { get; set; }

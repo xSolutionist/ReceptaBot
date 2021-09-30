@@ -11,7 +11,7 @@ namespace ReceptaBot.Shared.Models
         public int Id { get; set; }
         public decimal TotalPrice { get; set; }
         public string Name { get; set; }
-        public ICollection<Ingrediant> Ingrediants { get; set; } = new List<Ingrediant>();
+        public ICollection<Ingredient> Ingrediants { get; set; } = new List<Ingredient>();
 
     }
 }
