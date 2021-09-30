@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ReceptaBot.Server.Data;
 
 namespace ReceptaBot.Server.Migrations
 {
     [DbContext(typeof(ReceptaBotServerContext))]
-    partial class ReceptaBotServerContextModelSnapshot : ModelSnapshot
+    [Migration("20210930163727_ModelChanged")]
+    partial class ModelChanged
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
